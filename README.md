@@ -135,7 +135,7 @@ This is a digital twin — a simplified, verified simulation — not a connectio
 
 ---
 
-## Team
+## Team Bleach
 ### Dev Kushwaha
 
 <!-- Add team names -->
