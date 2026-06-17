@@ -136,7 +136,7 @@ This is a digital twin — a simplified, verified simulation — not a connectio
 ---
 
 ## Team
-###Dev Kushwaha
+### Dev Kushwaha
 
 <!-- Add team names -->
 
