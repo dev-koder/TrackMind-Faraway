@@ -138,8 +138,7 @@ This is a digital twin — a simplified, verified simulation — not a connectio
 ## Team Bleach
 ### Dev Kushwaha
 
-<!-- Add team names -->
 
 ---
 
-*FAR AWAY 2026 — The goal is not to write every line of code yourself. The goal is to build something meaningful.*
+
