@@ -1,0 +1,251 @@
+{
+  "corridor": {
+    "name": "Delhi-Howrah Main Line",
+    "total_distance_km": 1441,
+    "description": "India's busiest railway corridor connecting New Delhi to Kolkata"
+  },
+
+  "stations": [
+    {
+      "id": "NDLS",
+      "name": "New Delhi",
+      "city": "New Delhi",
+      "lat": 28.6424,
+      "lon": 77.2195,
+      "position_km": 0,
+      "platforms": 16,
+      "daily_footfall": 450000
+    },
+    {
+      "id": "CNB",
+      "name": "Kanpur Central",
+      "city": "Kanpur",
+      "lat": 26.4499,
+      "lon": 80.3319,
+      "position_km": 440,
+      "platforms": 10,
+      "daily_footfall": 120000
+    },
+    {
+      "id": "ALD",
+      "name": "Prayagraj Junction",
+      "city": "Prayagraj",
+      "lat": 25.4358,
+      "lon": 81.8463,
+      "position_km": 634,
+      "platforms": 12,
+      "daily_footfall": 95000
+    },
+    {
+      "id": "MGS",
+      "name": "Mughal Sarai Junction",
+      "city": "Chandauli",
+      "lat": 25.2833,
+      "lon": 83.1167,
+      "position_km": 788,
+      "platforms": 8,
+      "daily_footfall": 75000
+    },
+    {
+      "id": "PNBE",
+      "name": "Patna Junction",
+      "city": "Patna",
+      "lat": 25.5941,
+      "lon": 85.1376,
+      "position_km": 1003,
+      "platforms": 10,
+      "daily_footfall": 110000
+    },
+    {
+      "id": "HWH",
+      "name": "Howrah Junction",
+      "city": "Kolkata",
+      "lat": 22.5851,
+      "lon": 88.3425,
+      "position_km": 1441,
+      "platforms": 23,
+      "daily_footfall": 600000
+    }
+  ],
+
+  "track_segments": [
+    {
+      "from": "NDLS",
+      "to": "CNB",
+      "distance_km": 440,
+      "max_speed_kmh": 130,
+      "sections": 3,
+      "single_track": false
+    },
+    {
+      "from": "CNB",
+      "to": "ALD",
+      "distance_km": 194,
+      "max_speed_kmh": 110,
+      "sections": 2,
+      "single_track": false
+    },
+    {
+      "from": "ALD",
+      "to": "MGS",
+      "distance_km": 154,
+      "max_speed_kmh": 110,
+      "sections": 1,
+      "single_track": true,
+      "note": "Single track section — bottleneck"
+    },
+    {
+      "from": "MGS",
+      "to": "PNBE",
+      "distance_km": 215,
+      "max_speed_kmh": 120,
+      "sections": 2,
+      "single_track": false
+    },
+    {
+      "from": "PNBE",
+      "to": "HWH",
+      "distance_km": 438,
+      "max_speed_kmh": 130,
+      "sections": 3,
+      "single_track": false
+    }
+  ],
+
+  "trains": [
+    {
+      "id": "12301",
+      "name": "Howrah Rajdhani Express",
+      "type": "Rajdhani",
+      "priority": 1,
+      "capacity": 1200,
+      "occupancy_rate": 0.92,
+      "direction": "NDLS_TO_HWH",
+      "schedule": [
+        {"station": "NDLS", "departure": "16:55"},
+        {"station": "CNB",  "arrival": "21:10", "departure": "21:15"},
+        {"station": "ALD",  "arrival": "23:15", "departure": "23:20"},
+        {"station": "MGS",  "arrival": "01:15", "departure": "01:20"},
+        {"station": "PNBE", "arrival": "04:25", "departure": "04:35"},
+        {"station": "HWH",  "arrival": "10:05"}
+      ],
+      "color": "#E53E3E"
+    },
+    {
+      "id": "12302",
+      "name": "New Delhi Rajdhani Express",
+      "type": "Rajdhani",
+      "priority": 1,
+      "capacity": 1200,
+      "occupancy_rate": 0.89,
+      "direction": "HWH_TO_NDLS",
+      "schedule": [
+        {"station": "HWH",  "departure": "14:05"},
+        {"station": "PNBE", "arrival": "19:45", "departure": "19:55"},
+        {"station": "MGS",  "arrival": "22:45", "departure": "22:50"},
+        {"station": "ALD",  "arrival": "00:55", "departure": "01:00"},
+        {"station": "CNB",  "arrival": "03:05", "departure": "03:10"},
+        {"station": "NDLS", "arrival": "08:00"}
+      ],
+      "color": "#E53E3E"
+    },
+    {
+      "id": "12305",
+      "name": "Howrah Poorva Express",
+      "type": "Superfast",
+      "priority": 2,
+      "capacity": 1800,
+      "occupancy_rate": 0.81,
+      "direction": "NDLS_TO_HWH",
+      "schedule": [
+        {"station": "NDLS", "departure": "22:30"},
+        {"station": "CNB",  "arrival": "03:45", "departure": "03:50"},
+        {"station": "ALD",  "arrival": "06:10", "departure": "06:15"},
+        {"station": "MGS",  "arrival": "08:25", "departure": "08:30"},
+        {"station": "PNBE", "arrival": "11:40", "departure": "11:50"},
+        {"station": "HWH",  "arrival": "19:30"}
+      ],
+      "color": "#3182CE"
+    },
+    {
+      "id": "13005",
+      "name": "Howrah Amritsar Express",
+      "type": "Express",
+      "priority": 3,
+      "capacity": 2200,
+      "occupancy_rate": 0.73,
+      "direction": "NDLS_TO_HWH",
+      "schedule": [
+        {"station": "NDLS", "departure": "11:00"},
+        {"station": "CNB",  "arrival": "17:30", "departure": "17:35"},
+        {"station": "ALD",  "arrival": "20:10", "departure": "20:15"},
+        {"station": "MGS",  "arrival": "22:40", "departure": "22:45"},
+        {"station": "PNBE", "arrival": "02:10", "departure": "02:20"},
+        {"station": "HWH",  "arrival": "10:40"}
+      ],
+      "color": "#38A169"
+    },
+    {
+      "id": "12381",
+      "name": "Poorva Express",
+      "type": "Superfast",
+      "priority": 2,
+      "capacity": 1600,
+      "occupancy_rate": 0.76,
+      "direction": "HWH_TO_NDLS",
+      "schedule": [
+        {"station": "HWH",  "departure": "23:55"},
+        {"station": "PNBE", "arrival": "06:20", "departure": "06:30"},
+        {"station": "MGS",  "arrival": "09:15", "departure": "09:20"},
+        {"station": "ALD",  "arrival": "11:35", "departure": "11:40"},
+        {"station": "CNB",  "arrival": "13:45", "departure": "13:50"},
+        {"station": "NDLS", "arrival": "20:00"}
+      ],
+      "color": "#805AD5"
+    },
+    {
+      "id": "12274",
+      "name": "Howrah Duronto Express",
+      "type": "Duronto",
+      "priority": 1,
+      "capacity": 1400,
+      "occupancy_rate": 0.88,
+      "direction": "NDLS_TO_HWH",
+      "schedule": [
+        {"station": "NDLS", "departure": "08:15"},
+        {"station": "MGS",  "arrival": "17:30", "departure": "17:35"},
+        {"station": "HWH",  "arrival": "23:30"}
+      ],
+      "color": "#D69E2E"
+    }
+  ],
+
+  "simulation_config": {
+    "time_multiplier": 60,
+    "update_interval_seconds": 2,
+    "occupancy_assumption": 0.73,
+    "connection_window_minutes": 45,
+    "delay_cascade_threshold_minutes": 10
+  },
+
+  "delay_scenarios": [
+    {
+      "id": "scenario_1",
+      "name": "Rajdhani Late at Kanpur",
+      "description": "Default demo scenario",
+      "train_id": "12301",
+      "delay_minutes": 47,
+      "at_station": "CNB",
+      "reason": "Signal failure at Kanpur outer"
+    },
+    {
+      "id": "scenario_2",
+      "name": "Poorva Express Major Delay",
+      "description": "Larger cascade scenario",
+      "train_id": "12305",
+      "delay_minutes": 82,
+      "at_station": "ALD",
+      "reason": "Track maintenance overrun"
+    }
+  ]
+}
